@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import css from '../public/styles.css';
+import css from '../public/styles.scss';
 
 import Calculator from './containers/Calculator';
 
