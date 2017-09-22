@@ -1,5 +1,5 @@
 import React from 'react';
 
-const Clear = () => <div>C</div>;
+const Clear = ({ clear }) => <div onClick={() => clear()}>C</div>;
 
 export default Clear;

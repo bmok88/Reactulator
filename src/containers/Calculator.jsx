@@ -14,13 +14,19 @@ class Calculator extends Component {
     });
   };
 
+  clear = () => {
+    this.setState({
+      display: ''
+    });
+  };
+
   render() {
     const { display } = this.state;
 
     return (
       <section id="calculator">
         <Display display={display} />
-        <Keyboard add={this.add} />
+        <Keyboard add={this.add} clear={this.clear} />
       </section>
     );
   }

@@ -20,11 +20,11 @@ import Zero from './Zero';
 import Decimal from './Decimal';
 import Equals from './Equals';
 
-const Keyboard = ({ add }) => {
+const Keyboard = ({ add, clear }) => {
   return (
     <div id="keyboard">
       <div className="row one">
-        <Clear />
+        <Clear clear={clear} />
         <PosNeg />
         <Percent />
         <Divide />
