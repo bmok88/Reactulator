@@ -23,25 +23,35 @@ import Equals from './Equals';
 const Keyboard = () => {
   return (
     <div id="keyboard">
-      <Clear />
-      <PosNeg />
-      <Percent />
-      <Divide />
-      <Seven />
-      <Eight />
-      <Nine />
-      <Multiply />
-      <Four />
-      <Five />
-      <Six />
-      <Minus />
-      <One />
-      <Two />
-      <Three />
-      <Plus />
-      <Zero />
-      <Decimal />
-      <Equals />
+      <div className="row one">
+        <Clear />
+        <PosNeg />
+        <Percent />
+        <Divide />
+      </div>
+      <div className="row two">
+        <Seven />
+        <Eight />
+        <Nine />
+        <Multiply />
+      </div>
+      <div className="row three">
+        <Four />
+        <Five />
+        <Six />
+        <Minus />
+      </div>
+      <div className="row four">
+        <One />
+        <Two />
+        <Three />
+        <Plus />
+      </div>
+      <div className="row five">
+        <Zero />
+        <Decimal />
+        <Equals />
+      </div>
     </div>
   );
 };
