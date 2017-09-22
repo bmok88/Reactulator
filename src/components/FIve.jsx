@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Five = () => <div>5</div>;
+const Five = ({ numberPress }) => <div onClick={() => numberPress(5)}>5</div>;
 
 export default Five;
 

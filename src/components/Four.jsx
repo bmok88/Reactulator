@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Four = () => <div>4</div>;
+const Four = ({ numberPress }) => <div onClick={() => numberPress(4)}>4</div>;
 
 export default Four;
 

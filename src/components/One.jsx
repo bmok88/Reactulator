@@ -1,6 +1,6 @@
 import React from 'react';
 
-const One = () => <div>1</div>;
+const One = ({ numberPress }) => <div onClick={() => numberPress(1)}>1</div>;
 
 export default One;
 

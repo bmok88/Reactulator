@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Two = () => <div>2</div>;
+const Two = ({ numberPress }) => <div onClick={() => numberPress(2)}>2</div>;
 
 export default Two;
 

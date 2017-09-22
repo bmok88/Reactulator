@@ -20,13 +20,23 @@ class Calculator extends Component {
     });
   };
 
+  numberPress = num => {
+    this.setState({
+      display: this.state.display + num
+    });
+  };
+
   render() {
     const { display } = this.state;
 
     return (
       <section id="calculator">
         <Display display={display} />
-        <Keyboard add={this.add} clear={this.clear} />
+        <Keyboard
+          add={this.add}
+          clear={this.clear}
+          numberPress={this.numberPress}
+        />
       </section>
     );
   }

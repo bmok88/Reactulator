@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Eight = () => <div>8</div>;
+const Eight = ({ numberPress }) => <div onClick={() => numberPress(8)}>8</div>;
 
 export default Eight;
 

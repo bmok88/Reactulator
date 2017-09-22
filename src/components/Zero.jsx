@@ -1,5 +1,9 @@
 import React from 'react';
 
-const Zero = () => <div id="zero">0</div>;
+const Zero = ({ numberPress }) => (
+  <div id="zero" onClick={() => numberPress(0)}>
+    0
+  </div>
+);
 
 export default Zero;
