@@ -35,6 +35,38 @@ class Calculator extends Component {
     });
   };
 
+  posNeg = () => {
+    if (!this.state.afterOp) {
+      this.setState({
+        display: this.state.display * -1,
+        beforeOp: this.state.beforeOp * -1
+      });
+    } else if (this.state.operation && !this.state.afterOp) {
+      this.setState({
+        afterOp: '-',
+        display: '-'
+      });
+    } else {
+      this.setState({
+        display: this.state.display * -1,
+        afterOp: this.state.afterOp * -1
+      });
+    }
+  };
+
+  percent = () => {
+    if (!this.state.afterOp) {
+      this.setState({
+        display: this.state.display / 100,
+        beforeOp: this.state.display / 100
+      });
+    }
+    this.setState({
+      display: this.state.display / 100,
+      afterOp: this.state.display / 100
+    });
+  };
+
   clear = () => {
     this.setState({
       display: '',
@@ -50,7 +82,7 @@ class Calculator extends Component {
     ).toString();
     this.setState({
       display: value,
-      beforeOp: value,
+      beforeOp: '',
       afterOp: '',
       operation: ''
     });
@@ -95,8 +127,10 @@ class Calculator extends Component {
           add={this.add}
           clear={this.clear}
           equals={this.equals}
+          posNeg={this.posNeg}
           divide={this.divide}
           decimal={this.decimal}
+          percent={this.percent}
           multiply={this.multiply}
           subtract={this.subtract}
           numberPress={this.numberPress}

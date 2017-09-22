@@ -24,8 +24,10 @@ const Keyboard = ({
   add,
   clear,
   equals,
+  posNeg,
   divide,
   decimal,
+  percent,
   multiply,
   subtract,
   numberPress
@@ -34,8 +36,8 @@ const Keyboard = ({
     <div id="keyboard">
       <div className="row one">
         <Clear clear={clear} />
-        <PosNeg />
-        <Percent />
+        <PosNeg posNeg={posNeg} />
+        <Percent percent={percent} />
         <Divide divide={divide} />
       </div>
       <div className="row two">

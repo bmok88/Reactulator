@@ -1,5 +1,5 @@
 import React from 'react';
 
-const Percent = () => <div>%</div>;
+const Percent = ({ percent }) => <div onClick={() => percent()}>%</div>;
 
 export default Percent;
