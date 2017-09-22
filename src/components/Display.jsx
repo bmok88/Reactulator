@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Display = ({ value }) => (
+const Display = ({ display }) => (
   <div id="display">
-    <span>{value}</span>
+    <span>{display}</span>
   </div>
 );
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Plus = () => <div>+</div>;
+const Plus = ({ add }) => <div onClick={() => add()}>+</div>;
 
 export default Plus;
 

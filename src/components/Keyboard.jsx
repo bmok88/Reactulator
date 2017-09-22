@@ -20,7 +20,7 @@ import Zero from './Zero';
 import Decimal from './Decimal';
 import Equals from './Equals';
 
-const Keyboard = () => {
+const Keyboard = ({ add }) => {
   return (
     <div id="keyboard">
       <div className="row one">
@@ -45,7 +45,7 @@ const Keyboard = () => {
         <One />
         <Two />
         <Three />
-        <Plus />
+        <Plus add={add} />
       </div>
       <div className="row five">
         <Zero />
