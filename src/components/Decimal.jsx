@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Decimal = () => <div>.</div>;
+const Decimal = ({ decimal }) => <div onClick={() => decimal()}>.</div>;
 
 export default Decimal;
 

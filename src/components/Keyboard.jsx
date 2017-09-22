@@ -20,26 +20,35 @@ import Zero from './Zero';
 import Decimal from './Decimal';
 import Equals from './Equals';
 
-const Keyboard = ({ add, clear, numberPress }) => {
+const Keyboard = ({
+  add,
+  clear,
+  equals,
+  divide,
+  decimal,
+  multiply,
+  subtract,
+  numberPress
+}) => {
   return (
     <div id="keyboard">
       <div className="row one">
         <Clear clear={clear} />
         <PosNeg />
         <Percent />
-        <Divide />
+        <Divide divide={divide} />
       </div>
       <div className="row two">
         <Seven numberPress={numberPress} />
         <Eight numberPress={numberPress} />
         <Nine numberPress={numberPress} />
-        <Multiply />
+        <Multiply multiply={multiply} />
       </div>
       <div className="row three">
         <Four numberPress={numberPress} />
         <Five numberPress={numberPress} />
         <Six numberPress={numberPress} />
-        <Minus />
+        <Minus subtract={subtract} />
       </div>
       <div className="row four">
         <One numberPress={numberPress} />
@@ -49,8 +58,8 @@ const Keyboard = ({ add, clear, numberPress }) => {
       </div>
       <div className="row five">
         <Zero numberPress={numberPress} />
-        <Decimal />
-        <Equals />
+        <Decimal decimal={decimal} />
+        <Equals equals={equals} />
       </div>
     </div>
   );

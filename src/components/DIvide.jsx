@@ -1,5 +1,5 @@
 import React from 'react';
 
-const Divide = () => <div>/</div>;
+const Divide = ({ divide }) => <div onClick={() => divide()}>/</div>;
 
 export default Divide;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Equals = () => <div>=</div>;
+const Equals = ({ equals }) => <div onClick={() => equals()}>=</div>;
 
 export default Equals;
 
